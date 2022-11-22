@@ -13,6 +13,6 @@ Algorithm({
         '1': ('q_even', '->'),
         '[]': False,
     }
-}, initial_state='q_even').test({type(value)}, 10),
+}, (initial_state='q_even').test({type(value)}, 10),
     lambda word: len(word) % 2 == 0
 )
